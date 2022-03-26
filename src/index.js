@@ -6,4 +6,8 @@ const laughImg = document.querySelector('[data-laugh]');
 laughImg.src = laughing;
 console.log(laughImg);
 
-console.log(generateJoke());
+const jokeBtn = document.querySelector('[data-jokeBtn]');
+
+jokeBtn.addEventListener('click', generateJoke);
+
+generateJoke();
